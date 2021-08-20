@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<title>Make a Website 101</title>
+  <h1>Getting Started</h1>
+  <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+<div class="dropdown">
+  <button class="dropbtn">Content</button>
+  <div class="dropdown-content">
+    <a href="#">HOME</a>
+    <a href="#">Getting Started</a>
+    <a href="#">More Advanced</a>
+    <a href="#">IB Specific</a>
+    <a href="#">Support</a>
+    <a href="#">Synthax checker</a>
+  </div>
+</div>
+</head>
+
+    <body>
+      <p>First off, HTML is not a programming language, it is a hypertext markup language. The most basic format of it follows this principle:
+      It defines the langauge (html), the page title, the headings, the body and the text. You can try it yourself in the box below!</p>
+      <p> To begin making your own webpage, you will need an IDE (integrated development environment) these softwares are specifically designed to write code in. My recommendation is the Atom software, as it is free to download on both mac and windows as well as linux, and it gives tag suggestions making the coding process much faster</p>
+      <p> Download atom <a href="https://atom.io/" target="_blank" rel="noopener noreferrer">HERE</a></p>
+      <p> If you plan on coding in python, SublimeText is a much better option. It is free to download <a href="https://www.sublimetext.com/download" target="_blank" rel="noopener noreferrer">HERE</a></p>
+      <p>The beauty of an HTML document is that it opens directly in a browser, allowing you to see the progress you have made. Everytime you make a change, you can save the document, and refresh it in your browser to show the new changes. This makes testing the code a whole lot faster than most other languages</p>
+      <script type="text/javascript">
+      function compareText() {
+          var text1 = document.getElementById("text1").value;
+          var text2 = document.getElementById("text2").value;
+
+          if (text1 == text2) {
+              alert("Good Job!");
+          } else {
+              alert("There's a mistake, try again!");
+            }
+          }
+          </script>
+
+          Code example: <textarea name="paragraph_text" cols="30" rows="9" id="text1" disabled type="text">
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+</textarea>
+
+<textarea name="paragraph_text" cols="30" rows="9" id="text2" placeholder="copy code here"></textarea>
+
+      <p><button onclick="compareText()">Compare</button></p>
+  <p>Remember: just like code, the box is also case sensitive, and space sensitive. Copy the code exactly as you see it in the box! When writing your own code, feel free to add indents between sections to keep things organized!</p>
+<h2>Headers</h2>
+<p>Lets go through the different header sizes:</p>
+<ol>
+  <li>h1</li>
+  <li>h2</li>
+  <li>h3</li>
+  <li>h4</li>
+  <li>h5</li>
+  <li>h6</li>
+</ol>
+<p>Self explanatory right?</p>
+<p>Now for writing them in the code: the way it works is the same as any other tag so remember it!</p>
+<textarea name="paragraph_text" rows="5" cols="30" disabled><h1> is used to open the header so you can write in what you want yours to be, and </h1> is used to close your tag.</textarea>
+<p> Remeber! The way to open a tag is by placing it in between <> and the way to close it is by placing a forward slash in front of the tag name as seen in the h1 example above. This is the principle for all tags!</p>
+<p>An example of this can be seen in the base above. </p>
+      </body>
+  </html>
